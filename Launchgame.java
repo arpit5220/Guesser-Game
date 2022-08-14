@@ -9,11 +9,8 @@ class Guesser
     {
         Scanner sc=new Scanner(System.in);
 
-        System.out.println("Gusser Kindly Guess The Number between 1 to 1000:");
+        System.out.println("Gusser Kindly Guess The Number:");
         guessNum=sc.nextInt();
-//         if(guessNum<1 && guessNum>1000)
-//             System.out.println("Invalid Number, Try Again!");
-//         else
             return guessNum;
     }
 }
@@ -29,9 +26,6 @@ class Player
         Scanner sc=new Scanner(System.in);
         System.out.println("Player kindly guess the number:");
         pguessNum=sc.nextInt();
-//         if(pguessNum<1 && pguessNum>1000)
-//             System.out.println("Invalid Number, Try Again!");
-//         else
             return pguessNum;
     }
 }
@@ -42,11 +36,11 @@ class Umpire
     int numFromGuesser;
     int numFromPlayer1;
     int numFromPlayer2;
-    int NumFromPlayer3;
+    int numFromPlayer3;
 
     public void collectNumFromGuesser()
     {
-        Gusser g=new Guesser();
+        Guesser g=new Guesser();
         numFromGuesser=g.guessNumber();
 
     }
