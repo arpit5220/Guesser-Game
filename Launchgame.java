@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// GUESSER CLASS
 class Guesser
 {
     int guessNum;
@@ -10,13 +11,15 @@ class Guesser
 
         System.out.println("Gusser Kindly Guess The Number between 1 to 1000:");
         guessNum=sc.nextInt();
-        if(guessNum<1 && guessNum>1000)
-            System.out.println("Invalid Number, Try Again!");
-        else
+//         if(guessNum<1 && guessNum>1000)
+//             System.out.println("Invalid Number, Try Again!");
+//         else
             return guessNum;
     }
 }
 
+
+//PLAYER CLASS
 class Player
 {
     int pguessNum;
@@ -26,13 +29,14 @@ class Player
         Scanner sc=new Scanner(System.in);
         System.out.println("Player kindly guess the number:");
         pguessNum=sc.nextInt();
-        if(pguessNum<1 && pguessNum>1000)
-            System.out.println("Invalid Number, Try Again!");
-        else
+//         if(pguessNum<1 && pguessNum>1000)
+//             System.out.println("Invalid Number, Try Again!");
+//         else
             return pguessNum;
     }
 }
 
+// UMPIRE CLASS
 class Umpire
 {
     int numFromGuesser;
@@ -105,7 +109,7 @@ class Umpire
 }
 
 
-
+// MAIN CLASS LAUNCHGAME
 public class Launchgame {
     public static void main(String[] args) {
 
